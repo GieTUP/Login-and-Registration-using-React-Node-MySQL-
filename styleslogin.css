@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(245, 84, 84);
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    margin: 0;
+    background: #222;
+    font-family: 'work Sans', sans-serif;
+    font-weight: 400;
+}
+.logo{
+    float: left;
+    padding: 5px;
+    margin: 0;
+    width: 5%;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-flex;
+    margin-left: 70px;
+    padding-top: 30px;
+    position: relative;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover{
+    color: white;
+    font-size: 40px;
+    position: static;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #444;
+    position: absolute;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+    
+}
+nav a:hover::before{
+    width: 100%;
+}
+#tupv{
+    font-family: fantasy;
+    font-size: 32px;
+    color: white;
+    display: inline-flexbox;
+    padding-top: 20px;
+}
